@@ -1,68 +1,25 @@
 {
-  "posts": [
-    {
+
+  "courses": [{
+    "id": 1,
+    "title": "Lorem Ipsum",
+    "comver_img": "https://via.placeholder.com/350x350",
+    "type": "live"
+    }, 
+   {"id": 2, "title":  "Lorem Ipsum", "comver_img":"https://via.placeholder.com/350x350", "type": "video"}
+   ],
+
+  "posts": [{
       "id": 1,
       "title": "json-server",
       "author": "typicode"
-    },
-    {
-      "title": "json-server",
-      "author": "typicode",
-      "id": 2
-    },
-    {
-      "title": "json-server",
-      "author": "typicode",
-      "id": 3
-    },
-    {
-      "title": "json-server",
-      "author": "typicode",
-      "id": 4
-    },
-    {
-      "title": "json-server",
-      "author": "typicode",
-      "id": 5
-    },
-    {
-      "title": "json-server",
-      "author": "typicode",
-      "id": 6
-    },
-    {
-      "title": "json-server",
-      "author": "typicode",
-      "id": 7
-    },
-    {
-      "title": "json-server",
-      "author": "typicode",
-      "id": 8
-    },
-    {
-      "title": "json-server",
-      "author": "typicode",
-      "id": 9
-    },
-    {
-      "title": "json-server",
-      "author": "typicode",
-      "id": 10
-    },
-    {
-      "title": "json-server",
-      "author": "typicode",
-      "id": 11
     }
   ],
-  "comments": [
-    {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
-    }
-  ],
+  "comments": [{
+    "id": 1,
+    "body": "some comment",
+    "postId": 1
+  }],
   "profile": {
     "name": "typicode"
   }

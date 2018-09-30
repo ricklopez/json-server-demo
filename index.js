@@ -5,14 +5,14 @@ const middlewares = jsonServer.defaults();
 
 server.use(middlewares);
 
-server.use((req, res, next) => {
-  console.log("In Auth Middleware");
- if (isAuthorized(req)) { // add your authorization logic here
-   next(); // continue to JSON Server router
- } else {
-   res.sendStatus(401);
- }
-});
+// server.use((req, res, next) => {
+//   console.log("In Auth Middleware");
+//  if (isAuthorized(req)) { // add your authorization logic here
+//    next(); // continue to JSON Server router
+//  } else {
+//    res.sendStatus(401);
+//  }
+// });
 
 server.use(jsonServer.bodyParser);
 
@@ -32,7 +32,7 @@ server.post('/auth', (req, res) => {
 server.use(router);
 
 server.listen(process.env.PORT || 3001, () => {
-  console.log('JSON Server is running');
+  console.log(`JSON Server is running on ${process.env.PORT || 3001}`);
 });
 
 function isAuthorized(req){
