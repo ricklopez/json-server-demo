@@ -35,14 +35,19 @@ server.listen(process.env.PORT || 3001, () => {
   console.log('JSON Server is running');
 });
 
-function isAuthorized(){
-  return true;
+function isAuthorized(req){
+  console.log(req.headers.hasOwnProperty('authorization') ? req.headers.authorization : null );
+  var regexTest = RegExp('bearer*','g');
+  const authHeaderValue = req.headers.hasOwnProperty('authorization')? req.headers.authorization.toLowerCase() : ' ';
+  const isAuth = regexTest.test(authHeaderValue);
+  return isAuth;
 }
 
 function authAndGetUser(body, headers){
   return {
     username: "",
     role:"",
-    authToken: ""
+    authToken: "",
+    headers: headers
   }
 }
