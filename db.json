@@ -1,12 +1,14 @@
 {
 
-  "courses": [{
-    "id": 1,
-    "title": "Lorem Ipsum",
-    "comver_img": "https://via.placeholder.com/350x350",
-    "type": "live"
-    }, 
-   {"id": 2, "title":  "Lorem Ipsum", "comver_img":"https://via.placeholder.com/350x350", "type": "video"}
+  "courses": [
+    {"id": 1, "title": "Lorem Ipsum", "coverImg": "https://via.placeholder.com/350x350", "type": "video"}, 
+    {"id": 2, "title":  "Lorem Ipsum", "coverImg":"https://via.placeholder.com/350x350", "type": "video"},
+    {"id": 3, "title":  "Lorem Ipsum", "coverImg":"https://via.placeholder.com/350x350", "type": "video"},
+    {"id": 4, "title":  "Lorem Ipsum", "coverImg":"https://via.placeholder.com/350x350", "type": "video"},
+    {"id": 5, "title":  "Lorem Ipsum", "coverImg":"https://via.placeholder.com/350x350", "type": "live"},
+    {"id": 6, "title":  "Lorem Ipsum", "coverImg":"https://via.placeholder.com/350x350", "type": "live"},
+    {"id": 7, "title":  "Lorem Ipsum", "coverImg":"https://via.placeholder.com/350x350", "type": "live"},
+    {"id": 8, "title":  "Lorem Ipsum", "coverImg":"https://via.placeholder.com/350x350", "type": "live"}
    ],
 
   "posts": [{
