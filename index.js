@@ -3,6 +3,12 @@ const server = jsonServer.create();
 const router = jsonServer.router('db.json');
 const middlewares = jsonServer.defaults();
 
+server.use(jsonServer.rewriter({
+  '/api/*': '/$1',
+  '/blog/:resource/:id/show': '/:resource/:id',
+  '/v1/courses': '/courses_auth'
+}));
+
 server.use(middlewares);
 
 // server.use((req, res, next) => {
@@ -19,6 +25,24 @@ server.use(jsonServer.bodyParser);
 // Add custom routes before JSON Server router
 server.get('/echo', (req, res) => {
   res.jsonp(req.query);
+});
+
+server.post('/v1/users', (req, res) => {
+  
+  const user = {
+  message: 'Successfully created new user.',
+  user: {
+    id: Date.now(), //for mock only
+    email: req.body.email,
+    password: req.body.password, //mock only
+    updatedAt: '2018-10-04T06:12:15.125Z',
+    createdAt: '2018-10-04T06:12:15.125Z'
+  },
+  token: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjozLCJpYXQiOjE1Mzg2MzM1MzUsImV4cCI6MTUzODY0MzUzNX0.Hmza-AxTohxXOuB_BQRnFQBuE_YGHcmJVCdXnXQv370',
+  success: true
+};
+  
+  res.json(user);
 });
 
 server.post('/auth', (req, res) => {

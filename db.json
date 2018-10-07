@@ -10,6 +10,16 @@
     {"id": 7, "title":  "Lorem Ipsum", "coverImg":"https://via.placeholder.com/350x350", "type": "live"},
     {"id": 8, "title":  "Lorem Ipsum", "coverImg":"https://via.placeholder.com/350x350", "type": "live"}
    ],
+  "courses_auth": [
+    {"id": 1, "title": "Lorem Ipsum", "coverImg": "https://via.placeholder.com/350x350", "type": "video", "url": "https://youtu.be/GS_Yc4O1S4M"}, 
+    {"id": 2, "title":  "Lorem Ipsum", "coverImg":"https://via.placeholder.com/350x350", "type": "video", "url": "https://youtu.be/GS_Yc4O1S4M"},
+    {"id": 3, "title":  "Lorem Ipsum", "coverImg":"https://via.placeholder.com/350x350", "type": "video", "url": "https://youtu.be/GS_Yc4O1S4M"},
+    {"id": 4, "title":  "Lorem Ipsum", "coverImg":"https://via.placeholder.com/350x350", "type": "video", "url": "https://youtu.be/GS_Yc4O1S4M"},
+    {"id": 5, "title":  "Lorem Ipsum", "coverImg":"https://via.placeholder.com/350x350", "type": "live", "url": "https://youtu.be/GS_Yc4O1S4M"},
+    {"id": 6, "title":  "Lorem Ipsum", "coverImg":"https://via.placeholder.com/350x350", "type": "live", "url": "https://youtu.be/GS_Yc4O1S4M"},
+    {"id": 7, "title":  "Lorem Ipsum", "coverImg":"https://via.placeholder.com/350x350", "type": "live", "url": "https://youtu.be/GS_Yc4O1S4M"},
+    {"id": 8, "title":  "Lorem Ipsum", "coverImg":"https://via.placeholder.com/350x350", "type": "live", "url": "https://youtu.be/GS_Yc4O1S4M"}
+   ],
 
   "posts": [{
       "id": 1,

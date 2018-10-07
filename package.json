@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js --id",
+    "start": "node index.js --id  --routes routes.json",
     "start:default": "json-server --watch db.json --routes routes.json --middlewares middleware.js --port 3333 --host 0.0.0.0",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
